@@ -1,0 +1,122 @@
+// Core variables and mixins
+@import "bootstrap/bootstrap.less";
+@import "font-awesome/font-awesome.less";
+
+
+
+// Variables
+@container-padding: 50px;
+
+
+// Styling
+
+.row {
+  padding: @grid-gutter-width/2 0;
+}
+
+.logo {
+  margin: 5px 0;
+}
+
+.pane-title {
+  margin: 0 0 10px 0;
+}
+
+h1.page-header {
+  font-size: 48px;
+}
+
+.spartan-heading {
+  font-size: 48px;
+  margin: 0 0 10px 0;
+}
+
+.spartan-page-heading {
+  &:extend(.spartan-heading);
+  margin: 30px 0 15px 0;
+}
+
+body.navbar-is-fixed-top {
+  padding-top: 50px !important;
+}
+
+body.admin-menu.navbar-is-fixed-top {
+  padding-top: 58px !important;
+}
+
+.footer-container {
+  &:extend(.container-container);
+  padding: @container-padding 0;
+  background-color: @gray-darker;
+  .panel-pane {
+    color: white;
+  }
+}
+
+.section-container {
+  &:extend(.container);
+  padding: @container-padding 15px;
+}
+.container-container {
+  // background-attachment: fixed !important;
+  width: 100%;
+  margin: 0 auto;
+  background-size: cover !important;
+}
+
+.spartan-homepage {
+  i.fa {
+    font-size: 72px;
+  }
+  .pane-page-slogan {
+    padding-top: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    @media( min-width: @screen-md) {
+      font-size: 48px;
+    }
+    @media( min-width: @screen-lg) {
+      font-size: 56px;
+    }
+  }
+
+  .hero-container {
+    &:extend(.container-container);
+    background: url(../img/farming.jpg) top center no-repeat;
+    height: 500px;
+  }
+
+  .break-container {
+    &:extend(.container-container);
+    padding: @container-padding 0;
+    background-color: @navbar-default-bg;
+  }
+
+  .section-container {
+    .pane-title {
+      margin: 15px 0 10px 0;
+    }
+  }
+
+
+
+  .break-heading {
+    &:extend(.spartan-heading);
+    margin-bottom: 30px;
+  }
+
+  .partner-logo {
+    text-align: center;
+    background-color: yellow;
+  }
+}
+
+.blog-article {
+  margin: 30px 0;
+  h3 {
+    margin: 5px 0;
+  }
+  .blog-meta {
+    margin: 0 0 15px 0;
+  }
+}
