@@ -110,10 +110,37 @@
         </nav>
       </div>
     <?php endif; ?>
+    <?php if (!empty($messages)): ?>
+      <div class="row">
+        <div class="col-xs-12">
+          <?php print render($messages); ?>
+        </div>
+      </div>
+    <?php endif; ?>
   </div>
 </header>
 
 <?php print render($page['content']); ?>
+
+<div class="section-container">
+  <div class="container">
+    <div class="row row-centered">
+
+      <div class="spartan-logo col-xs-3">
+        <img class="img-responsive" src="<?php print $variables['theme_path']; ?>/img/usaid.png" />
+      </div>
+
+      <div class="spartan-logo col-xs-6">
+        <img class="img-responsive" src="<?php print $variables['theme_path']; ?>/img/gcfsi.jpg" />
+      </div>
+
+      <div class="spartan-logo col-xs-3">
+        <img class="img-responsive" src="<?php print $variables['theme_path']; ?>/img/usgdl.png" />
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <div class="footer-container">
   <div class="container">

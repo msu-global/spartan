@@ -115,11 +115,9 @@
 
 <div class="main-container container">
 
-
   <div class="row">
     <section<?php print $content_column_class; ?>>
-
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+      <?php if (!empty($breadcrumb)) { print $breadcrumb; }?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if (!empty($title)): ?>
