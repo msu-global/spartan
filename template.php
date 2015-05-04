@@ -12,6 +12,33 @@ function spartan_preprocess_image_style(&$vars) {
 }
 
 /**
+ * Returns HTML for an individual media widget.
+ *
+ * @param $variables
+ *   An associative array containing:
+ *   - element: A render element representing the widget.
+ *
+ * @ingroup themeable
+ */
+function spartan_media_widget($variables) {
+  $element = $variables['element'];
+  $output = '';
+  // The "form-media" class is required for proper Ajax functionality.
+  $output .= '<div id="' . $element['#id'] . '" class="media-widget form-media clearfix">';
+  $element['browse_button']['#title'] = t('Browse for resources');
+  foreach ($element['browse_button']['#attributes']['class'] as $class) {
+    if ($class == 'button') {
+      unset($class);
+    }
+  }
+  $element['browse_button']['#attributes']['class'][] = 'btn';
+  $element['browse_button']['#attributes']['class'][] = 'btn-primary';
+  $output .= drupal_render_children($element);
+  $output .= '</div>';
+  return $output;
+}
+
+/**
  * Implements hook_process_region().
  */
 function spartan_process_region(&$variables) {
