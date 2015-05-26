@@ -92,14 +92,19 @@ body.admin-menu.navbar-is-fixed-top {
 
 .section-container {
   &:extend(.container);
-  padding: @container-padding 15px;
+  padding: 15px;
 }
+
 .container-container {
-  background-attachment: fixed !important;
-  width: 100%;
-  margin: 0 auto;
+  // Causes the height to re-proportion to the browser window size, not the size
+  // of the element; a limitation of CSS 3.  Sigh.
+  //background-attachment: fixed !important;
   background-size: cover !important;
 }
+
+
+
+// Home page styling.
 
 .spartan-homepage {
   i.fa {
@@ -117,16 +122,34 @@ body.admin-menu.navbar-is-fixed-top {
     }
   }
 
+  .pane-spartan-layout-login {
+    .form-actions {
+      display: inline-block;
+    }
+    ul {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    border: 4px solid white;
+    background-color: rgba(255,255,255,0.6);
+    padding: 10px 15px;
+  }
+
   .hero-container {
     &:extend(.container-container);
     background: url(../img/farming.jpg) top center no-repeat;
     height: 500px;
   }
 
+  #explanation {
+    font-size: 36px;
+  }
+
   .break-container {
     &:extend(.container-container);
     padding: (@container-padding - @row-padding) 0;
-    background-color: @navbar-default-bg;
+    background-color: @gray-lighter;
+
   }
 
   .section-container {

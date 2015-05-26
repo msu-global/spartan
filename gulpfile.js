@@ -70,6 +70,6 @@ gulp.task('build', ['styles', 'fonts', 'images', 'scripts'], function() {});
 gulp.task('default', ['build'], function() {
   gulp.watch('src/js/**/*.js', ['scripts']);
   gulp.watch('src/less/**/*.less', ['styles']);
-  gulp.watch('src/img/**/*.(jpg|jpeg|png)', ['images']);
+  gulp.watch('src/img/**/*.+(jpg|jpeg|png)', ['images']);
   gulp.watch('src/fonts/**/*.+(eot|svg|ttf|woff)', ['fonts']);
 });
