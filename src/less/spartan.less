@@ -49,7 +49,7 @@
 }
 
 .logo {
-  margin: 5px 0;
+  margin: 7px 0;
 }
 
 .pane-title {
@@ -96,12 +96,24 @@ body.admin-menu.navbar-is-fixed-top {
 }
 
 .container-container {
-  // Causes the height to re-proportion to the browser window size, not the size
-  // of the element; a limitation of CSS 3.  Sigh.
-  //background-attachment: fixed !important;
-  background-size: cover !important;
+  // width: 100%;
 }
 
+// CSS 3 cannot handle background-size: cover and background-position: fixed
+// in the same element.  Create an extra <div> for the background, and manually
+// set the dimensions.
+.css3-background-fix {
+  background-attachment: fixed !important;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 500px;
+  width: 100%;
+}
+
+#hero-background {
+  background: url(../img/farming.jpg) top center no-repeat;
+}
 
 
 // Home page styling.
@@ -137,7 +149,6 @@ body.admin-menu.navbar-is-fixed-top {
 
   .hero-container {
     &:extend(.container-container);
-    background: url(../img/farming.jpg) top center no-repeat;
     height: 500px;
   }
 
@@ -209,18 +220,21 @@ div.forum-post {
 
 
 
-// Calendar Styling
-
-.calendar-calendar .month-view .full td.multi-day div.monthview ,
-.calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
-.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues {
-  background-color: white;
+// Navbar styling.
+.navbar .views-exposed-form .views-exposed-widget {
+  padding-top: 3px;
 }
 
-.calendar-calendar .month-view .full td.multi-day div.monthview,
-.calendar-calendar .week-view .full td.multi-day div.weekview,
-.calendar-calendar .day-view .full td.multi-day div.dayview {
-  color: black;
+.views-widget-filter-search_api_views_fulltext {
+  @media( min-width: @screen-sm) {
+    width: 150px;
+  }
+  @media( min-width: @screen-md) {
+    width: 200px;
+  }
+  @media( min-width: @screen-lg) {
+    width: inherit;
+  }
 }
 
 

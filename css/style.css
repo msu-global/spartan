@@ -8889,7 +8889,7 @@ table .checkbox input[type="checkbox"] {
   padding: 15px 0;
 }
 .logo {
-  margin: 5px 0;
+  margin: 7px 0;
 }
 .pane-title {
   margin: 0 0 10px 0;
@@ -8927,11 +8927,16 @@ body.admin-menu.navbar-is-fixed-top {
 .section-container {
   padding: 15px;
 }
-.container-container,
-.footer-container,
-.spartan-homepage .hero-container,
-.spartan-homepage .break-container {
-  background-size: cover !important;
+.css3-background-fix {
+  background-attachment: fixed !important;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 500px;
+  width: 100%;
+}
+#hero-background {
+  background: url(../img/farming.jpg) top center no-repeat;
 }
 .spartan-homepage i.fa {
   font-size: 72px;
@@ -8964,7 +8969,6 @@ body.admin-menu.navbar-is-fixed-top {
   vertical-align: middle;
 }
 .spartan-homepage .hero-container {
-  background: url(../img/farming.jpg) top center no-repeat;
   height: 500px;
 }
 .spartan-homepage #explanation {
@@ -9011,15 +9015,23 @@ div.forum-post {
 .panel-block {
   padding-bottom: 15px;
 }
-.calendar-calendar .month-view .full td.multi-day div.monthview,
-.calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
-.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues {
-  background-color: white;
+.navbar .views-exposed-form .views-exposed-widget {
+  padding-top: 3px;
 }
-.calendar-calendar .month-view .full td.multi-day div.monthview,
-.calendar-calendar .week-view .full td.multi-day div.weekview,
-.calendar-calendar .day-view .full td.multi-day div.dayview {
-  color: black;
+@media (min-width: 768px) {
+  .views-widget-filter-search_api_views_fulltext {
+    width: 150px;
+  }
+}
+@media (min-width: 992px) {
+  .views-widget-filter-search_api_views_fulltext {
+    width: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .views-widget-filter-search_api_views_fulltext {
+    width: inherit;
+  }
 }
 .media-widget .preview {
   margin: 0;
