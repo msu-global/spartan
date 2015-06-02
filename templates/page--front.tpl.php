@@ -122,7 +122,7 @@
 
 <?php print render($page['content']); ?>
 
-<div class="section-container">
+<div class="logo-container">
   <div class="container">
     <div class="row row-centered">
 
