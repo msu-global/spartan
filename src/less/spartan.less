@@ -4,7 +4,30 @@
 
 // Base-theme overrides.
 // Copied from the base Bootstrap theme.
-@import 'overrides.less';
+@import 'includes/overrides.less';
+
+// Select2 styling.
+@import 'includes/select2.less';
+@import 'includes/select2-bootstrap.less';
+
+// Media overrides.
+@import 'includes/media.less';
+
+// Views overrides.
+@import 'includes/views.less';
+
+// Search styling.
+@import 'includes/search.less';
+
+// Home page styling.
+@import 'includes/home.less';
+
+// Blog styling.
+@import 'includes/blog.less';
+
+// Forum styling.
+@import 'includes/forum.less';
+
 
 
 
@@ -14,28 +37,7 @@
 
 
 
-// Fixes and Overrides
 
-.views-exposed-form .views-exposed-widget .form-submit {
-  margin: 0;
-}
-.views-exposed-widgets {
-  margin: 0;
-}
-.views-field {
-  margin: 0 0 5px 0;
-}
-.view-filters {
-  padding-bottom: @grid-gutter-width;
-}
-
-.field {
-  margin: 0 0 10px 0;
-}
-
-.links.list-inline {
-  margin-left: 0;
-}
 
 
 // Styling
@@ -108,153 +110,4 @@ body.admin-menu.navbar-is-fixed-top {
   background-attachment: fixed !important;
   background-size: cover !important;
   background-repeat: no-repeat;
-}
-
-
-// #hero-background {
-//   &:extend(.css3-background-fix);
-//   background: url(../img/farming.jpg) top center no-repeat;
-// }
-
-
-// Home page styling.
-
-.spartan-homepage {
-  i.fa {
-    font-size: 72px;
-  }
-  .pane-page-slogan {
-    padding-top: 30px;
-    font-size: 36px;
-    font-weight: bold;
-    @media( min-width: @screen-md) {
-      font-size: 48px;
-    }
-    @media( min-width: @screen-lg) {
-      font-size: 56px;
-    }
-  }
-
-  .pane-spartan-layout-login {
-    .form-actions {
-      display: inline-block;
-    }
-    ul {
-      display: inline-block;
-      vertical-align: middle;
-    }
-    border: 4px solid white;
-    background-color: rgba(255,255,255,0.6);
-    padding: 10px 15px;
-  }
-
-  .hero-container {
-    &:extend(.background-container);
-    background: url(../img/farming.jpg) top center no-repeat;
-    height: 500px;
-  }
-
-  #explanation {
-    font-size: 36px;
-  }
-
-  .break-container {
-    &:extend(.background-container);
-    background: url(../img/farmfield.jpg) top center no-repeat;
-    height: 300px;
-  }
-
-  .section-container {
-    .pane-title {
-      margin: 15px 0 10px 0;
-    }
-  }
-
-  .break-heading {
-    &:extend(.spartan-heading);
-    margin-bottom: 30px;
-  }
-
-  .partner-logo {
-    text-align: center;
-    background-color: yellow;
-  }
-}
-
-
-.blog-article {
-  margin: 0 0 50px 0;
-  h3 {
-    margin: 5px 0;
-  }
-  border: 4px solid white;
-  background-color: rgba(255,255,255,0.9);
-  padding: 10px 15px;
-}
-
-.spartan-grid-plugin-style .blog-article {
-  margin: 0 0 20px 0;
-}
-
-
-
-// Forum styling
-
-.panel.forum-table {
-  margin-bottom: @grid-gutter-width;
-}
-
-.forum-table .panel-title {
-  text-align: center;
-}
-
-div.forum-post {
-  margin-bottom: @grid-gutter-width;
-}
-
-.indented {
-  margin-left: @container-padding;
-}
-
-.row.top {
-  padding-top: 0;
-}
-
-.panel-block {
-  padding-bottom: @row-padding;
-}
-
-
-
-// Navbar styling.
-.navbar .views-exposed-form .views-exposed-widget {
-  padding-top: 3px;
-}
-
-.views-widget-filter-search_api_views_fulltext {
-  @media( min-width: @screen-sm) {
-    width: 150px;
-  }
-  @media( min-width: @screen-md) {
-    width: 200px;
-  }
-  @media( min-width: @screen-lg) {
-    width: inherit;
-  }
-}
-
-
-
-// Media styling.
-.media-widget .preview {
-  margin: 0;
-}
-
-.ui-widget-header {
-  background: #ddd;
-  border: none;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
 }
