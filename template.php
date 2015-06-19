@@ -66,6 +66,12 @@ function spartan_process_region(&$variables) {
 }
 
 /**
+ * Theme function to add a class to the user menu.
+ */
+function spartan_menu_tree__user_menu(&$variables) {
+  return '<ul class="menu nav user-menu">' . $variables['tree'] . '</ul>';
+}
+/**
  * Implements hook_preprocess_page().
  */
 function spartan_preprocess_page(&$variables) {

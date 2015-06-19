@@ -9868,6 +9868,9 @@ table .checkbox input[type="checkbox"] {
     width: inherit;
   }
 }
+.user-menu li {
+  display: inline-block;
+}
 .spartan-homepage i.fa {
   font-size: 72px;
 }
