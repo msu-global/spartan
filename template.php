@@ -71,12 +71,6 @@ function spartan_process_region(&$variables) {
 function spartan_menu_tree__user_menu(&$variables) {
   return '<ul class="menu nav user-menu">' . $variables['tree'] . '</ul>';
 }
-/**
- * Implements hook_preprocess_page().
- */
-function spartan_preprocess_page(&$variables) {
-  $variables['theme_path'] = drupal_get_path('theme',$GLOBALS['theme']);
-}
 
 /**
  * Theme function to show list of types that can be posted in forum.

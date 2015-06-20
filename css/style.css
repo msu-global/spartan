@@ -9952,6 +9952,23 @@ div.forum-post {
 .panel-block {
   padding-bottom: 15px;
 }
+.page-services .hero-container {
+  background-color: #BAFACF;
+}
+.page-services .service-hero {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.page-services .service-hero i {
+  font-size: 40px;
+}
+.page-services .service-hero h1 {
+  font-size: 56px;
+  font-weight: bold;
+}
+.page-services .service-purpose i {
+  font-size: 100px;
+}
 .main-container {
   padding: 50px 15px;
 }
@@ -10002,7 +10019,8 @@ body.admin-menu.navbar-is-fixed-top {
 }
 .background-container,
 .spartan-homepage .hero-container,
-.spartan-homepage .break-container {
+.spartan-homepage .break-container,
+.page-services .hero-container {
   background-attachment: fixed !important;
   background-size: cover !important;
   background-repeat: no-repeat;
