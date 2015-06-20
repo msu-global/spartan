@@ -12,6 +12,13 @@ function spartan_preprocess_image_style(&$vars) {
 }
 
 /**
+ * Implements hook_preprocess_page().
+ */
+function spartan_preprocess_page(&$variables) {
+  $variables['theme_path'] = drupal_get_path('theme',$GLOBALS['theme']);
+}
+
+/**
  * Returns HTML for an individual media widget.
  *
  * @param $variables
