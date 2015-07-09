@@ -9923,16 +9923,13 @@ table .checkbox input[type="checkbox"] {
   background-color: yellow;
 }
 .blog-article {
-  margin: 0 0 50px 0;
-  border: 4px solid white;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px 15px;
+  margin-bottom: 80px;
 }
-.blog-article h3 {
-  margin: 5px 0;
+.spartan-grid-plugin-style {
+  margin-top: 25px;
 }
 .spartan-grid-plugin-style .blog-article {
-  margin: 0 0 20px 0;
+  margin-bottom: 15px;
 }
 .panel.forum-table {
   margin-bottom: 30px;
