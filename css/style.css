@@ -8498,7 +8498,6 @@ select,
   width: auto;
 }
 input.error {
-  color: #ffffff;
   border-color: #f0005e;
 }
 fieldset legend.panel-heading {
@@ -8545,9 +8544,6 @@ fieldset .panel-heading a.panel-title:hover {
 a.tabledrag-handle .handle {
   height: auto;
   width: auto;
-}
-.error {
-  color: #ffffff;
 }
 div.error,
 table tr.error {

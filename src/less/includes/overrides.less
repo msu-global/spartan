@@ -222,7 +222,8 @@ input, textarea, select, .uneditable-input {
   width: auto;
 }
 input.error {
-  color: @state-danger-text;
+  // This is white for some reason???
+  // color: @state-danger-text;
   border-color: @state-danger-border;
 }
 fieldset legend.panel-heading {
@@ -271,9 +272,9 @@ a.tabledrag-handle .handle {
 }
 
 // Error containers.
-.error {
-  color: @state-danger-text;
-}
+// .error {
+//   color: @state-danger-text;
+// }
 div.error,
 table tr.error {
   background-color: @state-danger-bg;
